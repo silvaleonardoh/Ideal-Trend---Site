@@ -1,0 +1,43 @@
+.destaque {
+    text-align: left;
+    margin: 5em auto 1em auto;
+    color: white;
+}
+
+.destaque h2 {
+    margin-bottom: 15px;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.destaque .list {
+    text-align: left;
+}
+
+.destaque .list li {
+    margin: 0px 11px 10px auto;
+    width: 196px;
+    display: inline-block;
+}
+
+.destaque .list li .titulo{
+    width: 100%;
+    height: 163px;
+    color: white;
+    text-align: center;
+    background-color: darkblue;
+}
+
+.destaque .list li p {
+    margin-top: 10px;
+    font-size: 16.7px;
+    color: gray;
+}
+
+@media (max-width: 600px ) {
+    .destaque .list li {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}

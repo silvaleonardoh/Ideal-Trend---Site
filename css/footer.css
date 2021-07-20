@@ -1,0 +1,28 @@
+.footer {
+    text-align: center;
+    padding: 2em 0;
+    background: rgb(85, 84, 84);
+}
+
+.footer li{
+    display: block;
+    margin: 5px 0;
+}
+
+.footer a {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #b3aeae;
+}
+
+.footer h2 {
+    padding: 4em 1em 2em 1em;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .footer li {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.centro {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header-1 {
+    padding: .2em;
+    background: darkblue;
+    text-align: right;
+}
+
+.div-container {
+    margin: 0 auto;
+}
+
+.header-1 .telefone-lista li {
+    color: white;
+    display: inline;
+    margin: 0 .7em 0 0;
+}
+
+.header-2 {
+    margin: .5em auto 1em auto;
+    height: 4.7em;
+}
+
+.header-2 .imagem1 {
+    float: left;
+}
+
+.header-2 .imagem1 p {
+    background-color: darkblue;
+    padding: 35px 60px;
+    color: white;
+}
+
+.header-2 .cabecalho {
+    float: right;
+}
+
+.header-2 .cabecalho ul {
+    background: darkblue;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.header-2 .cabecalho li {
+    color: gray;
+    /* background: ; */
+    display: block;
+    float: left;
+    padding: 3px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    margin-bottom: 3px;
+    z-index: 1;
+}
+
+.header-2 .cabecalho .list-1 li a {
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    margin: 0 5px 0 0;
+    z-index: 1;
+}
+
+.header-2 .cabecalho ul li ul {
+    background: darkblue;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 5px;
+    left: 0;
+    display: none;
+    
+}
+
+/* Querys */
+@media (min-width: 425px) {
+    .header-2 .cabecalho ul li:hover>ul,
+    ul li:focus-within>ul,
+    ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+}
+ul li ul li {
+    clear: both;
+    width: 100%;  
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+/* Substituindo Menu Responsivo sem alocação*/
+@media (max-width: 360px) {
+    .header-2 .cabecalho {
+        display: none;
+    }
+
+    .header-2 .cabecalho li {
+        padding: 1px;
+    }
+}
+/* ====================== */
+
+@media (max-width: 830px) {
+    .header-2 .imagem1 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width : 450px) {
+    .centro {
+        width: 100%;
+    }
+}
+
+@media (min-width: 830px) {
+    .header-2 .cabecalho {
+        float: right;
+        margin-top: 3em;
+    }
+
+    .header-2 .cabecalho li {
+        display: inline-block;
+    }
+}
